@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  urlAPI: 'http://hbsis-recruitment-api.azurewebsites.net/api/v1'
 };
