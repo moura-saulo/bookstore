@@ -1,28 +1,51 @@
-# Bookstore
+# Aplicação de Livraria
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.
+## Sobre ##
 
-## Development server
+- Este projeto foi desenvolvido como parte do recrutamento da HBSIS
+- A aplicação foi feita utilizando Angular 7
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Pré requisitos ##
 
-## Code scaffolding
+- NodeJS 10 ou Superior (https://nodejs.org/en/)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Componentes ##
 
-## Build
+> Componentes e frameworks utilizados no projeto
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+- Angular 7 ou superior (https://angular.io/guide/quickstart)
+- Angular Material (https://material.angular.io/)
 
-## Running unit tests
+## Instalação ##
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+> Rode os comandos abaixo numa CLI
 
-## Running end-to-end tests
+```sh
+git clone git@github.com:moura-saulo/bookstore.git {app-name}
+cd {app-name}
+npm install
+```
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+> Edite o parâmetro urlAPI nos arquivos environment e environment.prod com a URL da api local e de produção, respectivamente
 
-## Further help
+## Colocar para Rodar ##
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-"# bookstore" 
+> Execute o comando abaixo para processar os arquivos .sass e concatenar os .js e .css injetando no index.html.
+> O comando fica observando futuras modificações e repetindo o processo automaticamente
+> O comando fará a aplicação ser aberta no browser automaticamente após a compilação, devido ao parâmetro "-o"
+
+```sh
+cd {app-name}
+ng serve -o
+```
+
+## Produção ##
+
+> Execute o comando abaixo para processar os arquivos .sass e concatenar os .js e .css injetando no index.html com os parâmetros de produção
+
+```sh
+cd {app-name}
+ng build --prod
+```
+
+> Copie o conteúdo do diretório "dist" criado na aplicação após a compilação para a raiz do seu sevidor de aplicação
